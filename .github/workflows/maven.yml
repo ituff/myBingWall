@@ -26,7 +26,7 @@ jobs:
       run: date
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Daily Update
+    - name: Java CI with Maven
       run: java -jar target/bing-wallpaper-jar-with-dependencies.jar
     - name: Commit files
       run: |
